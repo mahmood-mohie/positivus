@@ -2,30 +2,29 @@
 @use '../base/variables' as *;
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: $primary-color;
-  color: white;
+  background-color: beige;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   &__logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    img {
+      width: 144px;
+      height: 23px;
+    }
   }
-
-  &__nav {
-    display: flex;
-    gap: 1rem;
-  }
-
-  &__link {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-
-    &:hover {
-      text-decoration: underline;
+  &__toggle {
+    >span {
+      display: block;
+      width: 30px;
+      height: 6px;
+      background-color: $secondary-color;
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
     }
   }
 }

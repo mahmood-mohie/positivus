@@ -50,6 +50,10 @@ button , .button {
   &--px {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    @include breakpoint-down(medium) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
   &--py {
     padding-top: 2.25rem;
@@ -60,7 +64,7 @@ button , .button {
 
 // visibility
 
-.hide-for-mobile {
+.hide_for_mobile {
   // hide for mobile and tablets
   @include breakpoint-down(medium) {
       display: none;
