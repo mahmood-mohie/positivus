@@ -1,0 +1,17 @@
+// main.scss
+@use './base/variables' as *;
+@use './base/globals';
+@use './utils/mixins';
+
+@use './layout/mainLayout';
+
+@use './components/header';
+
+@use './pages/about';
+@use './pages/home';
+@use './pages/blog';
+@use './pages/services';
+@use './pages/useCases';
+@use './pages/pricing';
+
+
